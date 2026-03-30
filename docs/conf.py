@@ -52,8 +52,6 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
     'numpydoc',
-    'sphinxcontrib.programoutput',
-    'sphinxcontrib.autoprogram',
     'sphinx.ext.githubpages',
 ]
 
@@ -140,9 +138,6 @@ default_role = 'py:obj'
 # unit titles (such as .. function::).
 #add_module_names = True
 
-# If true, sectionauthor and moduleauthor directives will be shown in the
-# output. They are ignored by default.
-#show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -152,9 +147,6 @@ pygments_style = 'sphinx'
 
 # If true, keep warnings as "system message" paragraphs in the built documents.
 #keep_warnings = False
-
-# If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = False
 
 # Added by Tim
 # http://stackoverflow.com/questions/12206334/sphinx-autosummary-toctree-contains-reference-to-nonexisting-document-warnings
