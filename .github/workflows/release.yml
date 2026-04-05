@@ -28,6 +28,9 @@ jobs:
           node-version: 20
           registry-url: https://registry.npmjs.org/
 
+      - name: Set version from tag
+        run: npm version ${GITHUB_REF_NAME#v} --no-git-tag-version
+
       - name: Publish to npm
         run: npm publish --access public
         env:
@@ -41,9 +44,7 @@ jobs:
 
       - name: Publish to GitHub Packages
         run: |
-          cp package.json package.json.bak
           npm pkg set name="@pfungg/openvaxx-py"
           npm publish --access public
-          cp package.json.bak package.json
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
