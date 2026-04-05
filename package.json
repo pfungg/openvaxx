@@ -1,6 +1,6 @@
 {
   "name": "@pfungg/openvaxx-py",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Open-source vaccine peptide selection toolkit",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,5 @@
     "url": "https://github.com/pfungg/openvaxx.git"
   },
   "keywords": ["vaccine", "peptide", "bioinformatics", "mhc"],
-  "license": "GPL-3.0",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
+  "license": "GPL-3.0"
 }
