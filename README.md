@@ -138,3 +138,12 @@ Now call `openVaxx-downloads fetch` with the `--already-downloaded-dir` option t
 ```
 $ openVaxx-downloads fetch models_class1_presentation --already-downloaded-dir downloads
 ```
+
+## Support Us!
+
+If this project has been helpful, consider sending a tip. Thank you!
+
+| Network | Address | Explorer |
+|---------|---------|----------|
+| ![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white) | `AE44HG7e8XESTzF49hi6hyAzD12DgZ1g2y6ptv878yM4` | [View on Solscan](https://solscan.io/account/AE44HG7e8XESTzF49hi6hyAzD12DgZ1g2y6ptv878yM4) |
+
