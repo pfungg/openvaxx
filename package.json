@@ -1,5 +1,5 @@
 {
-  "name": "@pfungg/openvaxx-py",
+  "name": "openvaxx-py",
   "version": "1.5.5",
   "description": "Open-source vaccine peptide selection toolkit",
   "main": "index.js",
