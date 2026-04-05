@@ -6,7 +6,7 @@
 # OpenVaxx
 [MHC I](https://en.wikipedia.org/wiki/MHC_class_I) ligand
 prediction package with competitive accuracy and a fast and
-[documented](http://neyokata.github.io/openVaxx/) implementation.
+[documented](http://philfung.github.io/openVaxx/) implementation.
 
 > [!IMPORTANT]
 > **Version 2.2.0** is the first release to use [PyTorch](https://pytorch.org/) as its neural network backend, replacing TensorFlow/Keras used in previous versions. It loads the same published weights and produces equivalent predictions, so existing workflows should continue to work with no changes.
@@ -23,8 +23,8 @@ openVaxx implements class I peptide/MHC binding affinity prediction.
 The current version provides pan-MHC I predictors supporting any MHC
 allele of known sequence. openVaxx runs on Python 3.10+ using the
 [PyTorch](https://pytorch.org/) neural network library.
-It exposes [command-line](http://neyokata.github.io/openVaxx/commandline_tutorial.html)
-and [Python library](http://neyokata.github.io/openVaxx/python_tutorial.html)
+It exposes [command-line](http://philfung.github.io/openVaxx/commandline_tutorial.html)
+and [Python library](http://philfung.github.io/openVaxx/python_tutorial.html)
 interfaces.
 
 openVaxx also includes two experimental predictors,
@@ -46,7 +46,7 @@ Have a bugfix or other contribution? We would love your help. See our [contribut
 
 ## Try it now
 
-You can generate openVaxx predictions without any setup by running our Google colaboratory [notebook](https://colab.research.google.com/github/neyokata/openVaxx/blob/master/notebooks/openVaxx-colab.ipynb).
+You can generate openVaxx predictions without any setup by running our Google colaboratory [notebook](https://colab.research.google.com/github/philfung/openVaxx/blob/master/notebooks/openVaxx-colab.ipynb).
 
 ## Installation (pip)
 
@@ -85,16 +85,16 @@ Wrote: /tmp/predictions.csv
 ```
 
 
-See the [documentation](http://neyokata.github.io/openVaxx/) for more details.
+See the [documentation](https://philfung.github.io/openvaxx/) for more details.
 
 
 ## Docker
 You can also try the latest (GitHub master) version of openVaxx using the Docker
-image hosted on [Dockerhub](https://hub.docker.com/r/neyokata/openVaxx) by
+image hosted on [Dockerhub](https://hub.docker.com/r/philfung/openVaxx) by
 running:
 
 ```
-$ docker run -p 9999:9999 --rm neyokata/openVaxx:latest
+$ docker run -p 9999:9999 --rm pfungg/openVaxx:latest
 ```
 
 This will start a [jupyter](https://jupyter.org/) notebook server in an
@@ -108,7 +108,7 @@ $ docker build -t openVaxx:latest .
 $ docker run -p 9999:9999 --rm openVaxx:latest
 ```
 ## Predicted sequence motifs
-Sequence logos for the binding motifs learned by openVaxx BA are available [here](https://neyokata.github.io/openVaxx-motifs/).
+Sequence logos for the binding motifs learned by openVaxx BA are available [here](https://philfung.github.io/openVaxx-motifs/).
 
 ## Common issues and fixes
 
@@ -119,14 +119,14 @@ To do this, first get the URL(s) of the downloads you need using `openVaxx-downl
 
 ```
 $ openVaxx-downloads url models_class1_presentation
-https://github.com/neyokata/openVaxx/releases/download/1.6.0/models_class1_presentation.20200205.tar.bz2```
+https://github.com/pfungg/openVaxx/releases/download/1.6.0/models_class1_presentation.20200205.tar.bz2```
 ```
 
 Then make a directory and download the needed files to this directory:
 
 ```
 $ mkdir downloads
-$ wget  --directory-prefix downloads https://github.com/neyokata/openVaxx/releases/download/1.6.0/models_class1_presentation.20200205.tar.bz2```
+$ wget  --directory-prefix downloads https://github.com/pfungg/openVaxx/releases/download/1.6.0/models_class1_presentation.20200205.tar.bz2```
 
 HTTP request sent, awaiting response... 200 OK
 Length: 72616448 (69M) [application/octet-stream]
@@ -146,4 +146,5 @@ If this project has been helpful, consider sending a tip. Thank you!
 | Network | Address | Explorer |
 |---------|---------|----------|
 | ![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white) | `AE44HG7e8XESTzF49hi6hyAzD12DgZ1g2y6ptv878yM4` | [View on Solscan](https://solscan.io/account/AE44HG7e8XESTzF49hi6hyAzD12DgZ1g2y6ptv878yM4) |
+![EVM](https://img.shields.io/badge/EVM%20(ETH)-627EEA?style=for-the-badge&logo=ethereum&logoColor=white) | `0x4791f942775193380ea7e723d38695cb9d0b3def` | [View on Etherscan](https://etherscan.io/address/0x4791f942775193380ea7e723d38695cb9d0b3def) |
 
