@@ -1,5 +1,5 @@
 {
-  "name": "openvaxx",
+  "name": "openvaxx-py",
   "version": "1.0.0",
   "description": "Open-source vaccine peptide selection toolkit",
   "main": "index.js",
@@ -8,8 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/neyokata/openvaxx.git"
+    "url": "https://github.com/pfungg/openvaxx.git"
   },
-  "keywords": ["vaccine", "peptide", "bioinformatics"],
+  "keywords": ["vaccine", "peptide", "bioinformatics", "mhc"],
   "license": "GPL-3.0"
 }
